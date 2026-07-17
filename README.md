@@ -2,7 +2,16 @@
 
 An AI trading agent, built as a [Claude Code](https://claude.com/claude-code) Skill, that places real trades in a **Robinhood agentic-trading account** by cloning the disclosed, real-money conviction of people with actual skin in the game — members of Congress, corporate insiders, and top-performing fund managers — instead of generating its own stock picks.
 
-Named after Mohnish Pabrai's "shameless cloning" philosophy: don't originate ideas, copy the best ones you can verify, and only act when independent sources agree.
+## Philosophy
+
+This project is named after value investor **Mohnish Pabrai**'s idea of "shameless cloning" — the practice, popularized in his talks and in *The Dhandho Investor*, of deliberately copying the disclosed, proven conviction of great investors rather than trying to originate every idea yourself. Pabrai has built his own track record largely by studying and replicating the moves of investors he respects, openly and without apology.
+
+The same instinct traces back to his friend and mentor **Charlie Munger**:
+
+> "I believe in the discipline of mastering the best that other people have ever figured out. I don't believe in just sitting down and trying to dream it all up yourself. Nobody's that smart."
+> — Charlie Munger
+
+This agent applies that philosophy systematically: instead of trying to out-think the market, it watches people who are legally required to disclose their trades — Congress members, corporate insiders, and top hedge/mutual fund managers (via 13F filings) — and only acts when multiple independent ones agree, under strict guardrails and human approval. It's built to run against **Robinhood's Agentic Trading** beta (see setup below), though the signal logic itself is broker-agnostic.
 
 > ⚠️ This is a personal, opinionated SOP for a small, dedicated, real-money account. It enforces strict guardrails (no options, no crypto, no leverage, mandatory human approval, hard position-size caps) but **it is not financial advice, and trading involves risk of loss.** Read [SKILL.md](SKILL.md) in full before connecting it to any account of your own.
 
